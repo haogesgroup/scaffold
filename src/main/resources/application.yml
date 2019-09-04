@@ -1,0 +1,30 @@
+#端口
+server:
+  port: 8083
+  tomcat:
+    uri-encoding: UTF-8 #tomcat 的URL编码
+
+spring:
+  #数据库设置
+  datasource:
+    url: jdbc:mysql://39.104.126.57:3306/jiucai?useUnicode=true&characterEncoding=UTF-8    #指定数据库编码
+    username: root
+    password:  jiucai123
+    driver-class-name: com.mysql.jdbc.Driver
+  http:
+    #设置项目编码
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+#mybatis设置
+mybatis:
+  type-aliases-package: com.chives.scaffold.entty #Mybatis实体类扫描路径
+  config-locations: classpath:mybatis/mybatis-config.xml #Mybatis配置文件
+  mapper-locations: classpath:mybatis/mapper/*.xml # MyBatis XML形式配置文件路径
+
+logging:
+  level:
+    com:
+      chives:
+        scaffold: debug #日志输出级别
