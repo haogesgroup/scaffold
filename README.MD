@@ -3,3 +3,4 @@ question:
 	2. 自定义一个xml模板解析器，可以用xml文件生成一个接口。
 	3. 全局异常处理。
 	4. 全局登录拦截。
+缓存穿透 缓存雪崩 缓存击穿及解决方案 https://www.cnblogs.com/dream-to-pku/p/9153999.html
