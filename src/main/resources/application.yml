@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://39.104.126.57:3306/jiucai?useUnicode=true&characterEncoding=UTF-8    #指定数据库编码
     username: root
     password:  jiucai123
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   http:
     #设置项目编码
     encoding:

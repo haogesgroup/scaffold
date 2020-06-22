@@ -35,7 +35,7 @@ public class UserController {
 
     @RequestMapping("/test")
     public String test(){
-        return "测试git hook + jenkins + restart";
+        return "测试'git hook + jenkins + restart shell' finally success";
     }
 
 
