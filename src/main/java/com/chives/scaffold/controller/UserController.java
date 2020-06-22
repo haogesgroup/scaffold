@@ -20,14 +20,14 @@ public class UserController {
     @Resource
     private UserServiceImpl userService;
 
-    @RequestMapping("queryUser")
+    @RequestMapping("/queryUser")
     public PageInfo<User> queryUser(){
         PageHelper.startPage(1, 10);
         List<User> users = userService.queryUser();
         PageInfo<User> userPageInfo = new PageInfo<>(users);
         return userPageInfo;
     }
-    @RequestMapping("addUser")
+    @RequestMapping("/addUser")
     public String  addUser(User user){
         userService.addUser(user);
         return "添加成功";
