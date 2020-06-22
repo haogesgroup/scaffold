@@ -28,9 +28,14 @@ public class UserController {
         return userPageInfo;
     }
     @RequestMapping("/addUser")
-    public String  addUser(User user){
+    public String addUser(User user){
         userService.addUser(user);
         return "添加成功";
+    }
+
+    @RequestMapping("/test")
+    public String test(){
+        return "测试git hook + jenkins + restart";
     }
 
 
